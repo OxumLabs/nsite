@@ -1,0 +1,242 @@
+/* Define a color scheme using CSS variables for consistency and easy adjustments */
+:root {
+    --primary-color: #007acc;
+    --primary-hover-color: #005f99;
+    --accent-color: #ff9800;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --header-bg-color: #333;
+    --header-text-color: white;
+    --footer-bg-color: #333;
+    --sidebar-bg-color: #444;
+    --sidebar-hover-bg-color: #666;
+    --sidebar-active-bg-color: var(--accent-color);
+    --code-bg-color: #272822;
+    --code-text-color: #f8f8f2;
+}
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles for body */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.75;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #444;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-hover-color);
+}
+
+/* Code blocks */
+pre {
+    background-color: var(--code-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', monospace;
+    margin-bottom: 20px;
+    color: var(--code-text-color);
+    font-size: 0.9rem;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--sidebar-bg-color);
+    color: white;
+    padding: 20px;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--sidebar-hover-bg-color);
+    transform: translateX(5px); /* Small shift on hover */
+}
+
+.sidebar ul li a.active {
+    background-color: var(--sidebar-active-bg-color);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
