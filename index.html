@@ -1,235 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags for Description -->
-    <meta name="description" content="Neit is an innovative programming language created at Oxum Labs. It empowers developers to craft their own syntax and compile to native code effortlessly.">
-    <meta property="og:title" content="Neit Programming Language">
-    <meta property="og:description" content="Neit is an innovative programming language created at Oxum Labs. It empowers developers to craft their own syntax and compile to native code effortlessly.">
-    <meta property="og:image" content="URL_TO_YOUR_IMAGE"> <!-- Link to an image that represents your site -->
-    <meta property="og:url" content="https://oxumlabs.github.io/nsite"> <!-- Your website URL -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- Twitter card type -->
-    <meta name="twitter:title" content="Neit Programming Language">
-    <meta name="twitter:description" content="Neit is an innovative programming language created at Oxum Labs. It empowers developers to craft their own syntax and compile to native code effortlessly.">
-    <meta name="twitter:image" content="logo.png"> <!-- Link to an image for Twitter -->
-    <link rel="icon" href="logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neit</title>
+    <title>Neit Programming Language</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        .title-bar {
-    font-family: 'COR', sans-serif; /* Modern font for clean look */
-    font-size: 2.8rem; /* Slightly larger font size for impact */
-    color: #ffffff; /* Bright white text for contrast */
-    text-align: center;
-    padding: 25px; /* Increased padding for roomier feel */
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* More vibrant gradient */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
-    border-radius: 12px; /* More rounded corners for a modern feel */
-    margin-bottom: 30px; /* Additional space below the title */
-    position: relative; /* Needed for glowing effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
-}
-
-.title-bar::before {
-    font-size: 1.5rem; /* Adjust symbol size */
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.7); /* Lighter color for the symbol */
-}
-
-.title-bar:hover {
-    transform: translateY(-5px); /* Lift the title bar slightly on hover */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
-}
-
-.title-bar::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 12px;
-    box-shadow: 0 0 15px 5px rgba(255, 126, 95, 0.6); /* Subtle glowing effect */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.title-bar:hover::after {
-    opacity: 1; /* Make the glow appear on hover */
-}
-
-
-        .definition-section {
-            width: 80%;
-            max-width: none;
-            font-size: 1.2rem;
-            margin: 20px auto;
-        }
-
-        .container {
-            width: 100%;
-            max-width: none;
-            padding: 20px;
-        }
-
-        /* Styles for the symbols */
-        .symbol {
-            font-size: 3rem; /* Adjust size as needed */
-            text-align: center;
-            margin: 10px; /* Space around symbols */
-            display: inline-block; /* Align symbols neatly */
-        }
-
-        /* Style for the description paragraphs */
-        .description {
-            text-align: center; /* Center the descriptions */
-            margin-bottom: 30px;
-        }
-
-        /* Header styles */
-        .header {
-            font-size: 2rem;
-            margin: 40px 0 20px 0;
-            text-align: center;
-            color: #ff6600;
-        }
-
-        /* Custom symbol styles */
-        .symbol-big {
-            font-size: 4rem;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
-<body class="checker-background">
-    <!-- Update the title-bar with a logo -->
-<div class="title-bar">
-    <img src="logo.png" alt="Neit Logo" class="logo">
-    Your Neit Programming Language
-</div>
+<body>
 
-    <div class="definition-section">
-        <h2 class="header">Welcome to Neit! 🎉</h2>
-        <p class="mc description">
-            Welcome to the extraordinary and joy-filled realm of Neit! 
-            The Neit Programming Language isn’t just another tool in the coder’s toolkit—it’s fast, modern, and a perfect match for both seasoned programmers and wide-eyed beginners. So grab your curiosity and gear up for an adventure, where writing software is as exhilarating as uncovering a hidden treasure trove! 
-        </p>
-
-        <h2 class="header">Taking the Leap! 🚀</h2>
-        <p class="mc description" style="color: blanchedalmond;">
-            Ready to take the leap? 
-            Get comfortable, maybe with your favorite cup of coffee, and dive into a guide that’s packed with more excitement than a rollercoaster ride!
-        </p>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <img src="logo.png" alt="Neit Logo" class="logo">
+        Your Neit Programming Language
+    </div>
+    <div class="nav">
+        <a href="#explore">Explore</a>
+        <a href="#guide">Guide</a>
+        <a href="#community">Community</a>
+        <a href="#team">Team</a>
     </div>
 
-    <div class="definition-section">
-        <h2 class="header">What is Neit? 🔍</h2>
-        <p class="definition-text description">
-            Neit is not just a language—it’s an open playground, a blank canvas for creative coders who dare to dream big. 
-            At its heart lies the NTune engine, a marvel of flexibility and power. This engine lets you, yes *you*, craft your own syntax at runtime, dynamically and without restrictions. Want to reshape the rules of coding? Go ahead! NTune turns you into the sculptor of your own language. 
-        </p>
+    <!-- Navigation Bar -->
 
-        <h2 class="header">Crafting Your Own Syntax! 📜</h2>
-        <p class="definition-text description">
-            Ever fantasized about creating a language all your own? 
-            Well, Neit makes that dream come true! It frees you from the shackles of traditional programming syntax. You’re not just a programmer—you’re the captain of your own ship, navigating uncharted coding waters. 
-        </p>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Explore Neit -->
+        <div class="section" id="explore">
+            <h2 class="header">Explore Neit 🎉</h2>
+            <p class="description">
+                Neit is more than just a programming language—it's an entire ecosystem built to allow you full control over your code and syntax. Design custom logic, build powerful applications, and make Neit yours.
+            </p>
+        </div>
 
-        <p class="definition-text description">
-            Neit’s compilation process is lightning-fast—it’s like a sprinter who never tires. 
-            It compiles to highly optimized native assembly for Linux in the blink of an eye, and can also generate robust C-based binaries using Clang and LLD, which means it works flawlessly on both Windows and Linux. macOS? 
-            It's on the way, making its stylish entrance just a bit fashionably late.
-        </p>
+        <!-- Section 2: Neit Guide -->
+        <div class="section" id="guide">
+            <h2 class="header">Your Guide to Neit 🚀</h2>
+            <p class="description">
+                Whether you're just starting or you're a seasoned programmer, Neit's comprehensive guide offers detailed instructions, examples, and tips to take full advantage of its features.
+            </p>
+        </div>
+
+        <!-- Section 3: Community -->
+        <div class="section" id="community">
+            <h2 class="header">Join Our Community 🛠</h2>
+            <p class="description">
+                Be a part of the growing Neit community! Collaborate, share, and engage with developers passionate about crafting new languages and tools. Your input and ideas matter.
+            </p>
+        </div>
+
+        <!-- Section 4: Meet the Team -->
+        <div class="section" id="team">
+            <h2 class="header">Meet the Neit Team 👨‍💻</h2>
+            <p class="description">
+                Neit was crafted by a dedicated team at Oxum Labs. Get to know the developers behind the language, and reach out if you'd like to collaborate or contribute to our projects.
+            </p>
+        </div>
     </div>
 
-    <div class="definition-section">
-        <h2 class="header">Simplicity and Fun! ✨</h2>
-        <p class="definition-text description">
-            Neit isn’t just about power, though. 
-            It’s about keeping things simple and fun. Say goodbye to hours of writing tedious boilerplate code! Neit strips away all that drudgery so you can focus on what really matters: the thrill of building something amazing. Whether you’re a veteran coder or a curious newcomer, Neit ensures that your journey is smooth, fast, and enjoyable, with no detours into frustration-ville.
-        </p>
-
-        <p class="definition-text description">
-            Now, let’s talk about the language's playful personality—its error messages (pun intended!). 
-            Neit doesn’t throw grumpy, cryptic warnings at you. No, no, no. In Neit, error messages are more like friendly mentors, full of charm and wisdom. 
-        </p>
-
-        <p class="definition-text description">
-            They’re here to gently guide you with a pat on the back and, occasionally, a light-hearted joke. 
-            Forget the dreaded walls of red text—Neit’s errors give you a nudge in the right direction, often with a wink and a smile, and a little encouragement to keep you going.
-        </p>
+    <!-- Community Section for Discord and GitHub -->
+    <div class="community-section">
+        <h2>Connect with Us on Discord & GitHub</h2>
+        <div class="community-links">
+            <a href="https://discord.gg/YJX3JxC3tj">Join Discord</a>
+            <a href="https://github.com/oxumlabs">Explore GitHub</a>
+        </div>
     </div>
 
-    <div class="definition-section">
-        <h2 class="header">The Magic of Neit-Distro-Lang!</h2>
-        <p class="definition-text description">
-            Here’s where things get really interesting. 
-            With Neit’s *distro-lang* feature, you aren’t stuck coding in some rigid, predefined syntax. Imagine you’re handed a box of colorful crayons—Neit-distro-lang lets you use any color you want, or mix and match as you see fit! 
-        </p>
-
-        <p class="definition-text description">
-            Using user-defined grammar files, Neit can translate *your* custom syntax at compile time, seamlessly converting it into Neit’s native language. 
-            Whether you want a small tweak, like changing `if` to `when`, or go completely wild and invent your own syntax from scratch, it’s all possible.
-        </p>
-
-        <p class="definition-text description">
-            Want to turn your code into an entirely new dialect? 
-            Sure thing! You can even mix and match grammars, creating a hybrid syntax that combines the best of your favorite languages. It’s not necessary to change *every* rule—sometimes small adjustments can make all the difference. 
-        </p>
-
-        <p class="definition-text description">
-            But the real magic is in the freedom to reinvent as much or as little as you like. 
-            Code like a pirate with your own treasure map, where every symbol has a secret meaning known only to you. With Neit-distro-lang, your programming language is what *you* make of it, and the NTune engine handles all the heavy lifting behind the scenes.
-        </p>
+    <!-- Footer -->
+    <div class="footer">
+        <h1>Neit Team</h1>
+        <p>Crafted with passion by Oxum Labs</p>
     </div>
 
-    <div class="definition-section">
-        <h2 class="header">Limitless Creativity!</h2>
-        <p class="definition-text description">
-            Neit isn’t here to limit you. 
-            It’s here to unleash your creativity and let you build your own coding experience from the ground up. The canvas is yours, the tools are sharp, and the potential is endless. 
-        </p>
-
-        <p class="definition-text description">
-            Neit may not come with a massive, bloated standard library—but that’s intentional. 
-            Why? Because the goal is to foster creativity. To encourage you to build only what you need and nothing more. You’re not handed a rigid set of tools; instead, Neit provides a blank slate, allowing you to craft the ultimate toolkit that fits your specific project. 
-        </p>
-
-        <p class="definition-text description">
-            It’s the essence of minimalism with a dash of magic.
-        </p>
-    </div>
-
-    <div class="definition-section">
-        <h2 class="header">Join the Adventure!</h2>
-        <p class="definition-text description">
-            So, are you ready to jump into a world where coding is fun, fast, and limitless? 
-            Dive in, explore, and let Neit empower you to shape your very own digital universe. 
-        </p>
-    </div>
-    <div class="definition-section">
-        <p class="definition-text description">
-            Here are some usefull links<br>
-            <a href="https://discord.gg/YJX3JxC3tj">- Discord!</a><br>
-            <a href="https://github.com/oxumlabs">- Git!</a>
-        </p>
-    </div>
-    
-    <div style="background-color: #4f4545; padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); width: 80%; max-width: 600px; animation: wobble 1s infinite; text-align: center; color: #ffffff; font-family: 'COR', sans-serif;">
-        <h1 style="color: #ff6600; margin-bottom: 20px;">Neit Team</h1>
-        <p style="font-size: 1.2rem; line-height: 1.5; margin-bottom: 15px;">
-            Neit was born at Oxum Labs under the co-founders Jaytirth Kundan (JOY) and Bilal Kanj El Kheir along with a few other prominent team members:
-        </p>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin: 10px 0;"><strong>Buj:</strong> Overall Manager</li>
-            <li style="margin: 10px 0;"><strong>Elie:</strong> Tester and Backup Manager (saved many times as Joy keeps messing up)</li>
-        </ul>
-    </div>
-    
 </body>
 </html>

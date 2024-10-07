@@ -1,4 +1,13 @@
 /* Define a color scheme using CSS variables for consistency and easy adjustments */
+
+
+@font-face {
+    font-family: 'COR'; /* Name to use in CSS */
+    src: url('fonts/cor.ttf') format('truetype'); /* Path to font file */
+    font-weight: normal; /* Normal weight */
+    font-style: normal; /* Normal style */
+}
+
 :root {
     --primary-color: #007acc;
     --primary-hover-color: #005f99;
