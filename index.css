@@ -17,9 +17,9 @@ body {
     font-size: 1.5em; /* Font size in em */
     color: #e6e6e6; /* Light text for contrast */
     text-align: center;
-    padding: 1em;
+    padding: 1.5em; /* Increased padding for better touch targets */
     background: linear-gradient(135deg, #333, #5a5a5a); /* Darker gradient */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.6); /* Adjusted shadow */
     border-radius: 0px;
     margin-bottom: 1em;
 }
@@ -35,24 +35,23 @@ body {
     display: flex;
     justify-content: center;
     background-color: #333; /* Darker nav bar */
-    padding: 0.8em 0;
+    padding: 0.8em 1em; /* Reduced padding for smaller screens */
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-radius: 2px;
-    gap: 1.5em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em; /* Adjusted radius */
+    gap: 1em; /* Reduced gap for smaller screens */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
 }
 
 .nav a {
     color: #f4e04d; /* Softer yellow */
     justify-content: space-between;
-    padding: 1.2em;
+    padding: 0.8em 1.2em; /* Adjusted padding for smaller screens */
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    border-radius: 1.2em;
-    gap: 2em;
+    border-radius: 0.8em; /* Adjusted radius */
     transition: background 0.3s ease;
 }
 
@@ -66,27 +65,27 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2em;
+    padding: 2em; /* Padding remains for larger screens */
 }
 
 /* Section Styling */
 .section {
     display: flex;
-    scroll-margin-top: 15em;
+    scroll-margin-top: 5em; /* Reduced margin for better mobile view */
     font-family: 'COR';
     align-items: center;
-    padding: 2em;
-    margin-bottom: 2em;
+    padding: 2em; /* Padding remains for larger screens */
+    margin-bottom: 2em; /* Margin remains for spacing */
     background-color: #2a2a2a; /* Dark background for sections */
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1em; /* Adjusted radius for a softer look */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 12em;
+    min-height: 10em; /* Reduced minimum height for mobile */
 }
 
 .section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0.8em 0.8em rgba(197, 255, 6, 0.7);
+    transform: translateY(-5px); /* Less translation for mobile */
+    box-shadow: 0 0.4em 0.4em rgba(197, 255, 6, 0.7);
 }
 
 .section .header {
@@ -97,9 +96,9 @@ body {
 
 .section .description {
     flex: 1;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reduced font size for better readability on mobile */
     color: #ea4a4a; /* Light grey for text */
-    padding: 0 1.5em;
+    padding: 0 1em; /* Adjusted padding for mobile */
     text-align: justify;
 }
 
@@ -118,29 +117,29 @@ body {
     padding: 2em;
     background-color: #3b3b3b; /* Dark background */
     color: #b0c31a; /* Softer lime green */
-    border-radius: 12px;
-    margin-top: 4em;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1em; /* Adjusted radius */
+    margin-top: 4em; /* Margin remains for spacing */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
 }
 
 .community-section h2 {
     font-size: 2.2em; /* Font size in em */
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* Margin remains for spacing */
 }
 
 .community-links {
     display: flex;
     justify-content: center;
-    gap: 4em;
+    gap: 2em; /* Reduced gap for better alignment on mobile */
 }
 
 .community-links a {
     color: #99e600; /* Bright green text */
     font-size: 1.2em; /* Font size in em */
     font-weight: bold;
-    padding: 0.8em 2em;
+    padding: 0.8em 1.5em; /* Adjusted padding for mobile */
     background-color: #444; /* Dark background */
-    border-radius: 8px;
+    border-radius: 0.5em; /* Adjusted radius */
     text-decoration: none;
     transition: background 0.3s ease;
 }
@@ -155,8 +154,8 @@ body {
     padding: 2em;
     color: #f1f1f1;
     text-align: center;
-    border-radius: 12px;
-    margin-top: 4em;
+    border-radius: 1em; /* Adjusted radius */
+    margin-top: 4em; /* Margin remains for spacing */
 }
 
 .footer h1 {
