@@ -7,25 +7,25 @@
 
 body {
     font-family: 'COR', sans-serif;
-    background-color: #e43d3d;
-    color: #333;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ddd; /* Light text color for contrast */
 }
 
 /* Title Bar Styles */
 .title-bar {
     font-family: 'COR', sans-serif;
-    font-size: 3rem;
-    color: #253a85;
+    font-size: 1.5em; /* Font size in em */
+    color: #e6e6e6; /* Light text for contrast */
     text-align: center;
-    padding: 30px;
-    background: linear-gradient(135deg, #b2958d, #ff0000);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    margin-bottom: 30px;
+    padding: 1em;
+    background: linear-gradient(135deg, #333, #5a5a5a); /* Darker gradient */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+    border-radius: 0px;
+    margin-bottom: 1em;
 }
 
 .title-bar img {
-    width: 80px;
+    width: 5em;
     margin-right: -3px;
     vertical-align: middle;
 }
@@ -34,21 +34,20 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #be9696;
-    padding: -2px 0;
+    background-color: #333; /* Darker nav bar */
+    padding: 0.8em 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-radius: 2px;
     gap: 1.5em;
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.326);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .nav a {
-    color: rgb(229, 255, 0);
+    color: #f4e04d; /* Softer yellow */
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 1.2em;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -58,8 +57,8 @@ body {
 }
 
 .nav a:hover {
-    background-color: #feb47b;
-    color: #333;
+    background-color: #444; /* Darker hover */
+    color: #ddd; /* Light text on hover */
 }
 
 /* Container */
@@ -67,40 +66,40 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2em;
 }
 
 /* Section Styling */
 .section {
     display: flex;
     scroll-margin-top: 15em;
-    font-family: COR;
+    font-family: 'COR';
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #655f24;
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: #2a2a2a; /* Dark background for sections */
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 200px;
+    min-height: 12em;
 }
 
 .section:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.533);
+    box-shadow: 0 0.8em 0.8em rgba(197, 255, 6, 0.7);
 }
 
 .section .header {
-    font-size: 2.4rem;
-    color: #ff6600;
+    font-size: 2em; /* Font size in em */
+    color: #ff9900; /* Bright orange header */
     flex: 1;
 }
 
 .section .description {
     flex: 1;
-    font-size: 1.4rem;
-    color: #de9191;
-    padding: 0 100px;
+    font-size: 1.5em;
+    color: #ea4a4a; /* Light grey for text */
+    padding: 0 1.5em;
     text-align: justify;
 }
 
@@ -116,53 +115,55 @@ body {
 /* Community Section */
 .community-section {
     text-align: center;
-    padding: 20px;
-    background-color: #ff0000;
-    color: rgb(159, 156, 7);
+    padding: 2em;
+    background-color: #3b3b3b; /* Dark background */
+    color: #b0c31a; /* Softer lime green */
     border-radius: 12px;
-    margin-top: 50px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 4em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .community-section h2 {
-    font-size: 2.6rem;
-    margin-bottom: 20px;
+    font-size: 2.2em; /* Font size in em */
+    margin-bottom: 1em;
 }
 
 .community-links {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 4em;
 }
 
 .community-links a {
-    color: #8ce13d;
-    font-size: 1.4rem;
+    color: #99e600; /* Bright green text */
+    font-size: 1.2em; /* Font size in em */
     font-weight: bold;
-    padding: 15px 30px;
-    background-color: #333;
+    padding: 0.8em 2em;
+    background-color: #444; /* Dark background */
     border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s ease;
 }
 
 .community-links a:hover {
-    background-color: #4e4239;
+    background-color: #555; /* Darker hover */
 }
 
 /* Footer */
 .footer {
-    background-color: #333;
-    padding: 20px;
-    color: white;
+    background-color: #222; /* Dark footer */
+    padding: 2em;
+    color: #f1f1f1;
     text-align: center;
     border-radius: 12px;
-    margin-top: 40px;
+    margin-top: 4em;
 }
 
 .footer h1 {
-    color: #ff6600;
+    color: #ff9900; /* Bright orange */
 }
+
+/* Font face */
 @font-face {
     font-family: 'COR'; /* Name to use in CSS */
     src: url('fonts/cor.ttf') format('truetype'); /* Path to font file */
