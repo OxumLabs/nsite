@@ -1,0 +1,28 @@
+#print something on new line!
+println("Hello World!")
+#Or on same line
+print("Hi")
+print("Hello")
+#output -> HiHello
+#make mutable or immutable variables
+may name = "joy" #mutable
+must name_2 = "joy" #immutable
+#take input inside mutable string type variable
+takein(name)
+#maths!
+may z = 100 // 2
+may x = z%2
+#conditions!
+if{
+    1 != 2 : yes
+    last : no
+}
+case yes{
+    println("Of course!)
+}
+
+case no{
+    println("Whaaaaaaa-?")
+}
+#make functions
+fn greet(){}

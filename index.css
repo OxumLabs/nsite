@@ -10,90 +10,192 @@
     font-family: 'PW';
     src: url('fonts/pw.ttf');
 }
+@font-face {
+    font-family: 'PH';
+    src: url('fonts/PH.ttf');
+}
 
 body {
     background: linear-gradient(90deg, #6e6c6c, #f07474, #737070, #f07474);
-        font-family: 'IBM', sans-serif;
+    font-family: 'IBM', sans-serif;
     margin: 0;
-    padding: 2em;
-    color: #333; /* Dark text for readability */
-    line-height: 1.6; /* Improved line height */
+    padding: 1em;
+    color: #333;
+    line-height: 1.5;
 }
 
 header {
-    text-align: center; /* Center header content */
-    margin-bottom: 1em; /* Space below header */
-    font-family: SM;
-    /*border:  solid black;*/
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: 'IBM', sans-serif;
 }
 
 .logo {
-    width: 8em; /* Adjust logo size */
-    border: 0.2em solid #000000; /* Blue border */
-            border-radius: 10em; /* Rounded corners */
-    /*margin-bottom: 0.01em; /* Space below logo */
+    width: 6em;
+    border: 0.1em solid #fff;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
 .header {
-    font-size: 2.5em; /* Large and prominent header */
-    color: #5f1010; /* Darker color for header */
-    margin: 0; /* No margin for a cleaner look */
+    font-size: 2em;
+    color: #5f1010;
+    margin: 0;
 }
 
 main {
-    border: 0.2em solid #000000; /* Blue border */
-
-    max-width: 100em; /* Limit main content width for readability */
-    margin: 0 auto; /* Center main content */
-    padding:1em; /* Padding for comfortable spacing */
-    background-color: rgba(255, 255, 255, 0.433); /* White background for content section */
-    border-radius: 1em; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 0.1em solid #fff;
+    max-width: 80em;
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1em;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 
 .content-section {
-    text-align: left; /* Align text to the left for comfort */
+    text-align: left;
+    border: 0.1em solid #ffffff;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
 }
 
 .desc-head {
-    font-size: 2em; /* Size for section headings */
-    color: #4a4a4a; /* Dark gray for headings */
-    /*margin: 1.5em 0 0.5em; /* Spacing for headings */
-    text-transform: uppercase; /* Uppercase for distinction */
+    font-size: 2em;
+    color: #4a4a4a;
+    margin: 1em 0;
+    text-transform: uppercase;
     text-align: center;
+    font-family: 'SM', sans-serif;
 }
 
 .desc {
-    border: 0.2em solid #000000; /* Blue border */
-
-    font-family: PW;
+    font-family: 'PH', sans-serif;
     text-align: center;
-    font-size: 1.6em; /* Comfortable reading size */
-    color: #ffffff; /* Slightly lighter text for description */
-    background: rgba(110, 91, 91, 0.95); /* Translucent background for contrast */
-    border-radius: 0.5em; /* Rounded corners */
-    padding: 1em; /* Comfortable padding */
-    margin: 1em 0; /* Margin for spacing */
+    font-size: 1.8em;
+    color: #ffffff;
+    background: rgba(110, 91, 91, 0.85);
+    border: 0.1em solid #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
 .credits {
-    border: 0.2em solid #000000; /* Blue border */
-
-    text-align: center; /* Center align credits */
-    margin-top: 2em; /* Space above credits */
+    text-align: center;
+    margin-top: 1em;
     color: #312b2b;
-    font-family: SM;
-    padding: 0.5em; /* Padding for comfort */
-    background-color: rgba(207, 207, 207, 0.95); /* Light gray background for credits */
-    border-radius: 0.2em; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for credits */
+    font-family: 'SM', sans-serif;
+    padding: 0.5em;
+    background-color: rgba(207, 207, 207, 0.8);
+    border-radius: 0.2em;
+    border: 0.1em solid #ffffff;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
 }
 
 .credits a {
-    color: #007BFF; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: #007BFF;
+    text-decoration: none;
 }
 
 .credits a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline;
 }
+
+.visits-p {
+    margin-top: 3em;
+    text-align: center;
+    background: linear-gradient(90deg, #fff, #82827f, #fff);
+    color: #282525;
+    border-radius: 0.5em;
+    font-family: 'PW', sans-serif;
+    font-size: 1.5em;
+    padding: 0.8em;
+    width: 90%;
+    margin: auto;
+    border: 0.1em solid #ffffff;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+}
+
+.btn-visit {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em; /* Compact padding */
+    font-size: 1em;
+    font-family: 'PW', sans-serif;
+    color: #f9c3c3;
+    background-color: #fb9595af;
+    border: 0.1em solid #fff;
+    border-radius: 0.3em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-visit:hover {
+    background-color: #f5baba;
+    color: #983d3d;
+    transform: scale(1.07);
+    border-color: #fff;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.btn-visit:active {
+    background-color: #e48989;
+    transform: scale(1.02);
+}
+
+.code {
+    background-color: #4a4a4a;
+    padding: 1em;
+    color: #fbf5f5;
+    font-size: 1.5em;
+    font-family: SM;
+    line-height: -1;
+    border-radius: 0.4em;
+}
+.comment {
+    color: #6c757d; /* Gray color for comments */
+}
+
+.function {
+    color: #007BFF; /* Blue color for function names */
+}
+
+.string {
+    color: #d9534f; /* Red color for strings */
+}
+
+.mutable {
+    color: #28a745; /* Green color for mutable declarations */
+}
+
+.immutable {
+    color: #dc3545; /* Red color for immutable declarations */
+}
+
+.variable {
+    color: #fd7e14; /* Orange color for variable names */
+}
+
+.number {
+    color: #17a2b8; /* Teal color for numbers */
+}
+
+.keyword {
+    color: #d6c5f0; /* Indigo color for keywords */
+}
+
+.true {
+    color: #198754; /* Green color for true */
+}
+
+.false {
+    color: #dc3545; /* Red color for false */
+}
+
