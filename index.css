@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'IBM';
+    src: url('fonts/IBM.ttf');
+}
+@font-face {
+    font-family: 'SM';
+    src: url('fonts/spacemonobold.ttf');
+}
+@font-face {
+    font-family: 'PW';
+    src: url('fonts/pw.ttf');
+}
+
+body {
+    background: linear-gradient(90deg, #6e6c6c, #f07474, #737070, #f07474);
+        font-family: 'IBM', sans-serif;
+    margin: 0;
+    padding: 2em;
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Improved line height */
+}
+
+header {
+    text-align: center; /* Center header content */
+    margin-bottom: 1em; /* Space below header */
+    font-family: SM;
+    /*border:  solid black;*/
+}
+
+.logo {
+    width: 8em; /* Adjust logo size */
+    border: 0.2em solid #000000; /* Blue border */
+            border-radius: 10em; /* Rounded corners */
+    /*margin-bottom: 0.01em; /* Space below logo */
+}
+
+.header {
+    font-size: 2.5em; /* Large and prominent header */
+    color: #5f1010; /* Darker color for header */
+    margin: 0; /* No margin for a cleaner look */
+}
+
+main {
+    border: 0.2em solid #000000; /* Blue border */
+
+    max-width: 100em; /* Limit main content width for readability */
+    margin: 0 auto; /* Center main content */
+    padding:1em; /* Padding for comfortable spacing */
+    background-color: rgba(255, 255, 255, 0.433); /* White background for content section */
+    border-radius: 1em; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.content-section {
+    text-align: left; /* Align text to the left for comfort */
+}
+
+.desc-head {
+    font-size: 2em; /* Size for section headings */
+    color: #4a4a4a; /* Dark gray for headings */
+    /*margin: 1.5em 0 0.5em; /* Spacing for headings */
+    text-transform: uppercase; /* Uppercase for distinction */
+    text-align: center;
+}
+
+.desc {
+    border: 0.2em solid #000000; /* Blue border */
+
+    font-family: PW;
+    text-align: center;
+    font-size: 1.6em; /* Comfortable reading size */
+    color: #ffffff; /* Slightly lighter text for description */
+    background: rgba(110, 91, 91, 0.95); /* Translucent background for contrast */
+    border-radius: 0.5em; /* Rounded corners */
+    padding: 1em; /* Comfortable padding */
+    margin: 1em 0; /* Margin for spacing */
+}
+
+.credits {
+    border: 0.2em solid #000000; /* Blue border */
+
+    text-align: center; /* Center align credits */
+    margin-top: 2em; /* Space above credits */
+    color: #312b2b;
+    font-family: SM;
+    padding: 0.5em; /* Padding for comfort */
+    background-color: rgba(207, 207, 207, 0.95); /* Light gray background for credits */
+    border-radius: 0.2em; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for credits */
+}
+
+.credits a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.credits a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
