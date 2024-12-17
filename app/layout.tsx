@@ -29,13 +29,13 @@ export default function RootLayout({
         <meta name="keywords" content="neit, language, ai, fast, compiler, interpreter" />
         <meta name="author" content="Anmol Raj" />
 
-        <link rel="canonical" href="https://www.yourwebsite.com/" />
+        <link rel="canonical" href="https://nsite-lac.vercel.app/" />
 
         {/* Social Media Open Graph (OG) Tags */}
         <meta property="og:title" content="NEiT" />
         <meta property="og:description" content="Whether you're a noob still figuring out semicolons or a battle-hardened coding ninja, Neit is here to save your day." />
         <meta property="og:image" content="/main.png" />
-        <meta property="og:url" content="https://www.yourwebsite.com/" />
+        <meta property="og:url" content="https://nsite-lac.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="nsite" />
 
@@ -44,9 +44,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
