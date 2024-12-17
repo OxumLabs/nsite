@@ -53,7 +53,7 @@ const Features = () => {
                   {data.heading}
                 </h4>
                 <p className="text-lg text-white">{data.text}</p>
-                <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple w-fit">
+                <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple lg:w-[40%] text-lg w-[100%]">
                   Learn More
                 </button>
               </div>
@@ -62,8 +62,8 @@ const Features = () => {
                   <Image
                     src={data.img}
                     alt="Feature Image"
-                    height={10}
-                    width={10}
+                    height={100}
+                    width={100}
                     className="w-[100%] h-[100%]"
                   />
                 </span>
@@ -72,7 +72,7 @@ const Features = () => {
           ) : data.index === 2 || data.index === 4 ? (
             <>
               <NeonGradientCard className="max-w-sm items-center justify-center text-center">
-                <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#CBACF9] from-35% to-[#E4ECFF] bg-clip-text text-5xl sm:text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+                <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#CBACF9] from-35% to-[#E4ECFF] bg-clip-text text-5xl sm:text-6xl font-bold leading-none tracking-tighter text-transparent">
                   {data.index === 4 ? (
                     <video
                       className="w-[100%] h-[100%]"
@@ -85,8 +85,8 @@ const Features = () => {
                     <Image
                       src={data.img}
                       alt="Feature Image"
-                      height={10}
-                      width={10}
+                      height={100}
+                      width={100}
                       className="w-[100%] h-[100%]"
                     />
                   )}
@@ -97,7 +97,7 @@ const Features = () => {
                   {data.heading}
                 </h4>
                 <p className="text-lg text-white">{data.text}</p>
-                <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple w-fit">
+                <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple lg:w-[40%] text-lg w-[100%]">
                   Learn More
                 </button>
               </div>

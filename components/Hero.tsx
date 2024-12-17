@@ -36,19 +36,19 @@ const Hero = () => {
           <p className=" text-blue-100 text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Faster than your morning coffee and smarter than your pet hamster.
           </p>
-          <div className="flex justify-evenly w-[80%] items-center flex-wrap gap-2">
-            <Link href="https://oxumlabs.github.io/">
-              <button className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-1">
+          <div className="flex justify-between w-[80%] items-center flex-wrap gap-2">
+            <Link href="https://oxumlabs.github.io/" className="lg:w-[40%] w-[100%]">
+              <button className="relative inline-flex h-16 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-1 w-[100%]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-black-100 px-3 py-2 text-lg font-medium text-white backdrop-blur-3xl">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-black-100 px-3 py-2 text-xl font-medium text-white backdrop-blur-3xl">
                   Oxum Labs
                 </span>
               </button>
             </Link>
-            <Link href="https://github.com/OxumLabs/neit/wiki">
-              <button className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-1">
+            <Link href="https://github.com/OxumLabs/neit/wiki" className="lg:w-[40%] w-[100%]">
+              <button className="relative inline-flex h-16 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-1 w-[100%]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-black-100 px-3 py-2 text-lg font-medium text-white backdrop-blur-3xl">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-black-100 px-3 py-2 text-xl font-medium text-white backdrop-blur-3xl">
                   Get Started
                 </span>
               </button>

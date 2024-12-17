@@ -9,7 +9,7 @@ const CTA = () => {
         <h6 className="text-2xl font-bold p-2">Start Coding</h6>
       </div>
       <Link href="https://github.com/OxumLabs/neit/wiki">
-        <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple w-fit m-10">
+        <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple text-lg m-4">
           Get Started
         </button>
       </Link>
