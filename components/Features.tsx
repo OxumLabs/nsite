@@ -2,6 +2,9 @@ import React from "react";
 import { NeonGradientCard } from "./ui/NeonGradientCard";
 import Image from "next/image";
 
+
+// removed gradient, make own gradient
+
 const Features = () => {
   const FEATURES = [
     {
