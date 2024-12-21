@@ -2,9 +2,6 @@ import React from "react";
 import { NeonGradientCard } from "./ui/NeonGradientCard";
 import Image from "next/image";
 
-
-// removed gradient, make own gradient
-
 const Features = () => {
   const FEATURES = [
     {
@@ -76,6 +73,7 @@ const Features = () => {
             <>
               <NeonGradientCard className="max-w-sm items-center justify-center text-center">
                 <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#CBACF9] from-35% to-[#E4ECFF] bg-clip-text text-5xl sm:text-6xl font-bold leading-none tracking-tighter text-transparent">
+
                   {data.index === 4 ? (
                     <video
                       className="w-[100%] h-[100%]"
@@ -101,6 +99,7 @@ const Features = () => {
                 </h4>
                 <p className="text-lg text-white">{data.text}</p>
                 <button className="px-8 py-2 rounded-md bg-transparent text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-purple lg:w-[40%] text-lg w-[100%]">
+
                   Learn More
                 </button>
               </div>
