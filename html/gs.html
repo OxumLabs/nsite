@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neit | Getting Started</title>
+    <link rel="stylesheet" href="../css/title_index.css">
+    <link rel="stylesheet" href="../css/codes.css">
+    <link rel="stylesheet" href="../css/boxes_index.css">
+    <link rel="stylesheet" href="../css/button.css">
+</head>
+
+<body>
+    <a href="../index.html" class="btn2" style="position: fixed; top: -0.5em; left: 0; margin-top: 1em;margin-left: 0.25em; font-size: 2em; ">
+        &lt;-
+    </a>
+    <h1 class="title">Getting Started with Neit</h1>
+    <div class="mbox">
+
+        <p class="mbox" style="width: fit-content; color: cadetblue;">
+            Linux
+        </p>
+        <p class="mbox" style="width: fit-content; color: rgb(212, 218, 219);">
+            Ready to unleash the power of Neit on Linux? Awesome! Head over to the <a href="https://github.com/OxumLabs/neit/tree/main/bin" class="btn2">bins</a> folder inside the Neit GitHub repository. There, you’ll find the latest versions of Neit for Linux – we’ve got both musl and glibc versions for you, so pick the one that fits your system.
+            After you’ve downloaded your version, open the folder in your terminal (let’s assume it’s in the Downloads folder). Now, depending on the version you downloaded, run the following commands:
+            For the musl version, use:
+            <code class="code">Neit@Oxumlabs(~/Downloads)~> sudo mv ~/Downloads/neit-musl /usr/bin/neit</code>
+            For the glibc version, use:
+            <code class="code">Neit@Oxumlabs(~/Downloads)~> sudo mv ~/Downloads/neit-glibc /usr/bin/neit</code>
+            Once that’s done, you’ll want to reload your shell. The easiest way is to just close the terminal and open it again. Then, for bash users, run:
+            <code class="code">Neit@Oxumlabs(~/Downloads)~> source ~/.bashrc</code>
+            And voila! You can now type <code class="code">neit</code> to start coding with Neit. 🎉
+        </p>
+
+        <p class="mbox" style="width: fit-content; color: cadetblue;">
+            Windows
+        </p>
+        <p class="mbox" style="width: fit-content; color: rgb(212, 218, 219);">
+            Alright Windows user, let's get Neit up and running! First, head to the <a href="https://github.com/OxumLabs/neit/tree/main/bin" class="btn2">bins folder</a> in the Neit GitHub repository and download the latest `neit-win.exe` file. After you've downloaded it, navigate to your Downloads folder and follow these steps:
+            First, create a folder named "Neit" in your "Program Files" directory. You can do this by opening **File Explorer**, going to **C:\Program Files**, right-clicking and selecting **New > Folder**, then naming it "Neit."
+            Now, open **Powrshell** as Administrator by searching for “Powrshell” in the Start Menu, right-clicking it, and choosing “Run as Administrator.”
+            In the Powrshell, navigate to your Downloads folder by running the following:
+            <code class="code">cd C:\Users\YourUsername\Downloads</code>
+            Then, move the `neit-win.exe` to the "Neit" folder you created in **Program Files** by running:
+            <code class="code">move neit-win.exe "C:\Program Files\Neit\neit.exe"</code>
+            Now, we need to make sure Windows can find Neit from anywhere in the system. To do this, we’ll add the path to Neit to the system’s PATH variable.
+            First, open PowerShell as Administrator by searching for “PowerShell” in the Start Menu, right-clicking it, and selecting “Run as Administrator.”
+            In PowerShell, run the following command to add Neit to your system PATH:
+            <code class="code">$env:Path += ";C:\Program Files\Neit"</code>
+            This command updates the system's environment variables so that it knows where Neit is located.
+            Once you’ve done that, restart your Powrshell (or PowerShell) and type:
+            <code class="code">neit</code>
+            You should see Neit’s welcome message! If it doesn't work immediately, restart your computer to ensure the changes to your PATH take effect. And that's it! You're ready to start coding with Neit on Windows! 🎉
+        </p>
+        <p class="mbox" style="width: fit-content; color: cadetblue;">
+            For other OSs ,  we are currently not providing binaries but they can be compiled in following manner
+            <br>
+            Firslty clone the repo <code class="code">git clone https://github.com/oxumlabs/neit</code> and then you need to
+            make sure <code class="code">rust</code> is installed on your system and have a stable
+            internet connection ,now head to neit's directory and run <code class="code">cargo build --release</code> and then after it finishes
+            building you can find the binary in <code class="code">target/release/</code> directory    
+        </p>
+    </div>
+</body>
+
+</html>

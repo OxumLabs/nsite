@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'JBMR';
+    src: url('../jbmr.ttf');
+}
+
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4rem; /* Reduced font size */
+    font-weight: bold;
+    color: #F5E9C5;
+    text-align: center;
+    margin-top: 30px; /* Reduced margin-top */
+    letter-spacing: 1.5px;
+    font-family: "JBMR";
+    padding: 15px 30px; /* Reduced padding */
+    background-color: #222121;
+    border: 3px solid #F5E9C5;
+    border-radius: 15px; /* Slightly reduced border radius */
+    box-shadow: 0 0 10px rgba(245, 233, 197, 0.7); /* Reduced box-shadow size */
+    transition: all 0.3s ease;
+}
+
+.title:hover {
+    box-shadow: 0 0 20px rgba(245, 233, 197, 1);
+    color: #FFFFFF;
+}
+
+.tl1 {
+    width: 8%; /* Reduced image size */
+    max-width: 70%; /* Adjusted max-width for mobile compatibility */
+    margin-top: 0.4em; /* Slightly reduced margin-top */
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3.5rem; /* Further reduced title size for mobile */
+        padding: 12px 25px; /* Adjusted padding */
+    }
+
+    .tl1 {
+        width: 12%; /* Slightly larger image size on mobile */
+        max-width: 50%; /* Adjusted max-width for mobile screens */
+    }
+}
+.subh {
+    font-size: 2em;
+    font-weight: bold;
+    color: #F5E9C5;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 2em;
+    letter-spacing: 0.1em;
+    font-family: "JBMR";
+    padding: 1em 2em;
+    background-color: #222121;
+    border: 0.125em solid #F5E9C5;
+    border-radius: 0.75em;
+    box-shadow: 0 0 0.375em rgba(245, 233, 197, 0.7);
+    transition: all 0.3s ease;
+}
+
+.subd {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F5E9C5;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: "JBMR";
+    padding: 1em 2em;
+    background-color: #222121;
+    border: 0.1875em solid #F5E9C5;
+    border-radius: 0.9375em;
+    box-shadow: 0 0 0.625em rgba(245, 233, 197, 0.7);
+    transition: all 0.3s ease;
+}

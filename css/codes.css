@@ -1,0 +1,58 @@
+.code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    background-color: #02392a;
+    text-align: left;
+    color: #e65858;
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    border: 1px solid #3d0808;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0.1em 0;
+}
+
+.code:hover {
+    background-color: #2d0404;
+    border-color: #5d0f0f;
+    box-shadow: 0 0 0.5em rgba(245, 233, 197, 0.2);
+}
+
+.code-block {
+    display: block;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.code-container {
+    position: relative;
+    margin: 1em 0;
+}
+
+.code-title {
+    font-size: 0.9em;
+    color: #8b8b8b;
+    margin-bottom: 0.75em;
+}
+
+@media (max-width: 600px) {
+    .code {
+        font-size: 0.85em;
+        padding: 0.2em 0.4em;
+    }
+
+    .code-block {
+        padding: 1em;
+        margin: 1em 0;
+        font-size: 0.95em;
+    }
+
+    .code-title {
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+    }
+}

@@ -1,0 +1,67 @@
+.command-section {
+    margin: 2em 0;
+    padding: 1.2em;
+    background: #1a1a1a;
+    border-radius: 0.75em;
+    border: 0.125em solid #3d0808;
+}
+
+.command-section h3 {
+    color: #e2d4ba;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'JBMR', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.command-item {
+    padding: 1em;
+    margin: 1em 0;
+    background: #230303;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.command-item:hover {
+    transform: translateX(0.5em);
+}
+
+.command-item h4 {
+    color: #795252;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    font-family: 'JBMR', sans-serif;
+}
+
+.command-separator {
+    border: none;
+    border-top: 0.125em solid #3d0808;
+    margin: 1.5em 0;
+}
+
+.explanation {
+    color: #a67c7c;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    font-family: 'JBMR', sans-serif;
+}
+
+.optimization-grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (max-width: 768px) {
+    .command-section {
+        padding: 1em;
+    }
+
+    .command-item {
+        padding: 0.8em;
+    }
+
+    .optimization-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neit | Docs</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/boxes_index.css">
+    <link rel="stylesheet" href="../../css/button.css">
+    <link rel="stylesheet" href="../../css/codes.css">
+    <link rel="stylesheet" href="../../css/title_index.css">
+    <link rel="stylesheet" href="../../css/info.css">
+    <link rel="stylesheet" href="../../css/expandable.css">
+    <link rel="stylesheet" href="../../css/cs.css">
+</head>
+
+<body>
+<a href="../../index.html" id="scrollButton" class="btn2"
+    style="
+        position: fixed; 
+        top: 0.5em; 
+        left: 50%; 
+        transform: translateX(-50%);
+        margin-top: 1em; 
+        font-size: 2em; 
+        align-self: center; 
+        transition: all 0.3s ease;">
+    &lt;-
+</a>
+
+<script>
+    const button = document.getElementById("scrollButton");
+
+    // Listen to scroll events
+    window.onscroll = function () {
+        if (window.scrollY > 50) {
+            // When scrolled down more than 50px:
+
+            // Set the button to the top-left corner
+            button.style.left = "1em"; // Adjust horizontal position (left)
+            button.style.top = "0.1em"; // Adjust vertical position (top)
+
+            // Remove centering transformation
+            button.style.transform = "none";
+
+            // Shrink the size of the button
+            button.style.fontSize = "1.2em"; // Adjust button size (smaller)
+        } else {
+            // When scrolled up to the top of the page (scrollY <= 50):
+
+            // Reset the button to the top-center
+            button.style.left = "50%"; // Adjust horizontal position (center)
+            button.style.top = "0.5em"; // Adjust vertical position (below the top edge)
+
+            // Center the button horizontally
+            button.style.transform = "translateX(-50%)";
+
+            // Restore the original size of the button
+            button.style.fontSize = "2em"; // Adjust button size (original)
+        }
+    };
+</script>
+
+
+    <h1 class="title" style="margin-top: 2em;">Neit Documentation</h1>
+    <p class="mbox">Get to know what all neit has to offer and how to use it</p>
+    <div class="docs-container">
+                <div class="expandable">
+            <div class="expandable-header">
+                Command Line Arguments
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="command-section">
+                    <p class="mbox">Basic Commands:</p>
+                    <p class="mbox"><code class="code">neit run script.nsc</code> -> Compile and run the program</p>
+                    <p class="mbox"><code class="code">neit build script.nsc</code> -> Compile to executable</p>
+                </div>
+        
+                <div class="command-section">
+                    <p class="mbox">Build Options:</p>
+                    <p class="mbox"><code class="code">-o=output</code> or <code class="code">--output=output</code> -> Set output name</p>
+                    <p class="mbox"><code class="code">-static</code> -> Create static binary</p>
+                    <p class="mbox"><code class="code">-opt=1|2|3|4</code> -> Set optimization level</p>
+                </div>
+        
+                <div class="command-section">
+                    <p class="mbox">Additional Options:</p>
+                    <p class="mbox"><code class="code">-g=rules.txt</code> or <code class="code">--grammar=rules.txt</code> -> Use custom grammar</p>
+                    <p class="mbox"><code class="code">-rc</code> or <code class="code">--retain-c</code> -> Keep generated C code</p>
+                    <p class="mbox"><code class="code">-cls</code> -> Clear screen before running</p>
+                </div>
+        
+            </div>
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">
+                Printing
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <p class="mbox">
+                    Printing in <strong>Neit</strong> is <strong>incredibly easy</strong>—we've completely removed the
+                    need for the usual programming clutter like semicolons, brackets, and quotes. All you need to do is
+                    type the <strong>print</strong> command, followed by a space, and then type the message you want to
+                    print. Simple, right? You just write it out, and <strong>boom</strong>—you're done!
+                    <br><br>
+                    Let me show you a quick example:
+                    <br>
+                    You want to print "Hello World" to the screen? Just type this:
+                    <br>
+                    <code class="code">print Hello World</code>
+                    <br>
+                    When you run this, you’ll see the output:
+                    <br>
+                    <code class="code">neit@ol ~> Hello World</code>
+                    <br>
+                    It's as simple as that! No complex syntax—just a clean and direct way to print text. It doesn’t get
+                    any easier than this.
+                    <br><br>
+                    <strong>But here’s the kicker</strong>—<strong>print</strong> in <strong>Neit</strong> doesn't add a
+                    newline at the end by default. This means if you call <strong>print</strong> multiple times in a
+                    row, all your text will be printed on the same line.
+                    <br>
+                    For example, take a look at this:
+                    <br>
+                    <code class="code">print Hi</code> and
+                    <br>
+                    <code class="code">print iH</code>
+                    <br>
+                    If you run these two commands, you’ll get the following output:
+                    <br>
+                    <code class="code">neit@ol ~> HiiH</code>
+                    <br>
+                    The reason it’s all crammed together is because <strong>print</strong> doesn’t automatically add a
+                    line break after each statement. It just spits everything out right after the previous text.
+                    <br><br>
+                    Now, if you want to add that <strong>new line</strong> automatically after each print statement
+                    (because sometimes we all like our outputs to be neat and tidy), you can switch to the
+                    <strong>println</strong> command. It works the same as <strong>print</strong>, except it
+                    automatically adds a line break after your message.
+                    <br>
+                    For example, if you use:
+                    <br>
+                    <code class="code">println Hello</code>
+                    <br>
+                    <code class="code">println World</code>
+                    <br>
+                    You’ll get this output:
+                    <br>
+                    <code class="code" style="width: 8.9em; text-align: left;">neit@ol ~></code><br><code class="code"
+                        style="width: 8.9em; text-align: left;">Hello</code><br><code class="code"
+                        style="width: 8.9em; text-align: left;">World </code>
+                    <br><code class="code" style="width: 8.9em; text-align: left;">neit@ol ~> </code>
+                    <br>
+                    Notice how this time, the text is followed by a new line. This is because <strong>println</strong>
+                    automatically moves to the next line after printing.
+            </div>
+
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">
+                Variables
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>What are Variables?</h3>
+                    <p>Think of variables as labeled boxes where you can store information.</p>
+
+                    <div class="code-example">
+                        <h4>Declaring Variables</h4>
+                        <code class="code">may name = "Joy"</code><br>
+                        <code class="code">may age = 25</code><br>
+                        <code class="code">may height = 1.75</code><br>
+                        <p class="explanation">The 'may' keyword creates a new variable</p>
+                    </div>
+
+                    <div class="code-example">
+                        <h4>Using Variables</h4>
+                        <code class="code">may name = "Joy"<br>
+    println Hello {name}</code>
+                        <p class="explanation">Output: Hello Joy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Functions (Commands) Section -->
+        <div class="expandable">
+            <div class="expandable-header">
+                Commands (Functions)
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Creating Your Own Commands</h3>
+                    <div class="code-example">
+                        <h4>Basic Command</h4>
+                        <code class="code">cmd greet (){<br>
+        
+        println Hello there!<br>
+    }</code>
+                        <p class="explanation">Call it with: <code class="code">call greet</code></p>
+                    </div>
+
+                    <div class="code-example">
+                        <h4>Command with Parameters</h4>
+                        <code class="code">cmd greet
+        (name:str)<br>
+        println Hello {name}!
+        <br>
+    }</code>
+                        <p class="explanation">Call it with: <code class="code">call greet {"Joy"}</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time Control Section -->
+        <div class="expandable">
+            <div class="expandable-header">
+                Time Control
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Making Your Program Wait</h3>
+                    <div class="code-example">
+                        <code class="code">wait 1s</code><br>
+                        <code class="code">wait 500ms</code><br>
+                        <code class="code">wait 1m</code><br>
+                        <code class="code">wait 1hr</code><br>
+                        <p class="explanation">Use s for seconds, ms for milliseconds, m for minutes, hr for hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Flow Section -->
+        <div class="expandable">
+            <div class="expandable-header">
+                Control Flow
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Making Decisions (If Statements)</h3>
+                    <div class="code-example">
+                        <code class="code">may age = 18<br>
+    if (age >= 18) {<br>
+        println You can vote!<br>
+    }
+    </code>
+                    </div>
+
+                    <h3>Repeating Actions (While Loops)</h3>
+                    <div class="code-example">
+                        <code class="code">may count = 0
+    while (count < 5) {<br>
+        println Count is {count}<br>
+        count = count + 1<br>
+    }</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input/Output Section -->
+        <div class="expandable">
+            <div class="expandable-header">
+                Input and Output
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Getting User Input</h3>
+                    <div class="code-example">
+                        <code class="code">print What's your name? <br>
+    may name = takein()<br>
+    println Hello {name}!</code>
+                        <p class="explanation">takein() waits for user to type and press Enter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">
+                Comments
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Adding Comments</h3>
+                    <div class="code-example">
+                        <code class="code"># This is a single line comment</code><br>
+                        <code class="code">## This is multiline comment<br>expands here aswell
+                            and ends with 2 hash ##</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">
+                Exit Command
+                <span class="expandable-arrow"></span>
+            </div>
+            <div class="expandable-content">
+                <div class="mbox">
+                    <h3>Exiting Your Program</h3>
+                    <div class="code-example">
+                        <code class="code">exit ok</code><br>
+                        <code class="code">exit fail</code><br><br>
+                        <p style="text-align: left; font-size: 2em;">available error codes</style>
+                        <ul style="text-align: left;">
+                            <li>ok, success, 0 : exits with a success error code, i.e., no error occurred during
+                                execution</li>
+                            <li>fail, failure, 1 : exits with a failure error code</li>
+                            <li>invalid arg, inv arg, 128 : exits due to an invalid argument</li>
+                            <li>not found, nf, 127 : exits because a required resource was not found</li>
+                            <li>permission err, perm err, permission denied, 126 : exits due to a permission error</li>
+                            <li>killed, kill, 137 : exits because the process was killed</li>
+                            <li>interrupt, int, signal int, 130 : exits due to an interrupt signal</li>
+                            <li>segfault, seg, segmentation fault, 11 : exits due to a segmentation fault</li>
+                            <li>out of range, range error, 255 : exits because a value was out of range</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Semigen Engine</h1>
+    <p class="mbox">Semigen allows you to declare custom command aliases and use them instead of regular ones , ofcourse
+        you can
+        still use the default one whenever you want<br> you just need to specify the grammar file when you are building
+        your Program
+        <br> to use semigen engine create a file for example <code class="code">grm.txt</code> and inside this file
+        specify what command alias you want for example
+        <br>
+        for exit command -> <code class="code">exit ~ bye</code> and now in code anywhere you can Use <code
+            class="code">bye ok</code> instead of <code class="code">exit ok</code>
+    </p>
+
+    <script src="../../js/expand.js"></script>
+</body>
+
+</html>

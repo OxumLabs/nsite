@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'JBMR';
+    src: url('../jbmr.ttf');
+}
+
+.info-container {
+    font-family: 'JBMR', sans-serif;
+    font-size: 1.125em;
+    color: #F5E9C5;
+    text-align: left;
+    max-width: 80%;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #222121;
+    border: 0.125em solid #F5E9C5;
+    border-radius: 0.625em;
+    box-shadow: 0 0 0.5em rgba(245, 233, 197, 0.7);
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+}
+
+.info-container p {
+    font-size: 1.2em;
+    color: rgb(124, 147, 12);
+    margin-bottom: 1em;
+}
+
+.info-container ul {
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+
+.info-container li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        font-size: 1em;
+        max-width: 90%;
+        padding: 0.8em;
+    }
+
+    .info-container p {
+        font-size: 1.1em;
+    }
+
+    .info-container li {
+        font-size: 1em;
+    }
+}

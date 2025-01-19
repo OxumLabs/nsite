@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'JBMR';
+    src: url(../jbmr.ttf);
+}
+
+.btn1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1em 2em; /* Using em for padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em; /* Using em for font-size */
+    font-family: 'JBMR', sans-serif;
+    border-radius: 0.5em; /* Using em for border-radius */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0.25em 0.5em rgba(76, 175, 80, 0.3); /* Using em for box-shadow */
+    will-change: transform; /* Hint to the browser that transform is likely to change */
+}
+
+.btn1:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: 0.125em solid #4CAF50; /* Using em for border width */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+    box-shadow: 0 0.375em 0.75em rgba(76, 175, 80, 0.4); /* Using em for box-shadow */
+}
+
+.btn1:active {
+    transform: scale(1); /* No scale change on active */
+    box-shadow: 0 0.25em 0.5em rgba(76, 175, 80, 0.3); /* Using em for box-shadow */
+}
+
+@media (max-width: 768px) {
+    .btn1 {
+        padding: 0.75em 1.5em; /* Adjusted padding with em for mobile */
+        font-size: 1em; /* Smaller font size with em for mobile */
+    }
+}
+.btn2 {
+    background: transparent;
+    color: #e2d4ba;
+
+    border: 0.125em solid #a67c7c;
+    padding: 0.05em 0.8em;
+    font-size: 1.2em;
+    border-radius: 0.75em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'JBMR', sans-serif;
+    text-align: center;
+    min-width: 1.25em;
+    box-shadow: 0 0 0.625em rgba(166, 124, 124, 0.1);
+}
+
+.btn2:hover {
+    background: #8d6868;
+    border-color: #e2d4ba;
+    transform: scale(1.05);
+    box-shadow: 0 0 0.9375em rgba(166, 124, 124, 0.2);
+}
+
+.btn2:active {
+    transform: scale(0.98);
+    background: #765757;
+    box-shadow: 0 0 0.5em rgba(166, 124, 124, 0.15);
+}
+
+@media (max-width: 768px) {
+    .btn2 {
+        padding: 0.3em 0.6em;
+        font-size: 0.8em;
+        min-width: 5em;
+    }
+}

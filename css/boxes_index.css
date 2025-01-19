@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'JBMR';
+    src: url('../jbmr.ttf');
+}
+
+.mbox {
+    font-family: 'JBMR', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #E0E0E0;
+    background-color: #222121;
+    padding: 20px 30px;
+    border: 2px solid #F5E9C5;
+    border-radius: 12px;
+    max-width: 85%;
+    width: 100%;
+    margin: 20px auto;
+    line-height: 1.6;
+    box-shadow: 0 0 15px rgba(245, 233, 197, 0.4);
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.mbox:hover {
+    box-shadow: 0 0 25px rgba(245, 233, 197, 0.8);
+    color: #FFFFFF;
+}
+
