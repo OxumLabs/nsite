@@ -27,7 +27,7 @@ body {
 .container {
   width: 95%;
   max-width: 90em;
-  margin: 1.25em auto;
+  margin: 0.4em auto;
   padding: 1.25em;
   background: rgba(0, 0, 0, 0);
   border: 0.1em solid transparent;
@@ -116,4 +116,40 @@ a {
 
 a:hover {
   color: gold;
+}
+@keyframes jiggle {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(0.4deg) scale(1.02); }
+  50% { transform: rotate(-0.4deg) scale(1); }
+  75% { transform: rotate(0.4deg) scale(1.02); }
+  100% { transform: rotate(0.4deg) scale(1); }
+}
+
+.jiggle-button {
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2em;
+  background-color: #4f6959;
+  padding: 0.6em 0.3em;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  border: #1E90FF solid 0.15em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: jiggle 0.5s infinite ease-in-out;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.jiggle-button:hover {
+  background-color: #5e7a6a;
+  transform: rotate(1deg) scale(1.05);
+  animation: none; /* Stops jiggling but smoothly transitions */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.jiggle-button:active {
+  transform: scale(0.95);
 }
