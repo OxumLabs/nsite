@@ -1,0 +1,119 @@
+@import url("rsrc/font.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #352929, #3a270c, #4d4d37, #033d03, #44082b, #61222f, #990099);
+  background-size: 400% 400%;
+  animation: gradientAnimation 30s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 1.25em;
+  font-size: 1.1em;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 95%;
+  max-width: 90em;
+  margin: 1.25em auto;
+  padding: 1.25em;
+  background: rgba(0, 0, 0, 0);
+  border: 0.1em solid transparent;
+}
+
+img {
+  display: block;
+  margin: 1em auto;
+}
+
+.title {
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0.15em solid rgba(0, 255, 255, 0.6);
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin: 1em auto 0;
+  border-radius: 0;
+}
+code{
+  font-size: 1.3em;
+  color: burlywood;
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 0em 0.2em;
+}
+
+.desc {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  background: rgba(57, 173, 173, 0.473);
+  margin-top: 1.5em;
+  border-radius: 0;
+  border-width: 0.3em;
+  border-style: solid;
+}
+
+.warning {
+  background: rgba(255, 0, 0, 0.15);
+  padding: 1em;
+  border: 0.3em solid red;
+  text-align: left;
+  margin-top: 1.5em;
+  border-radius: 0;
+}
+
+.syntax-title {
+  font-size: 1.6em;
+  margin-top: 1.25em;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 0;
+  background-color: #4c7272;
+  width: 60%;
+  padding: 0.3em;
+}
+
+.code-block {
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.8em;
+  padding: 0.3em;
+  text-align: left;
+  overflow-x: auto;
+  margin-top: 1em;
+  border: 0.1em solid rgba(166, 255, 0, 0.651);
+  border-radius: 0;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+}
+
+a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: gold;
+}
